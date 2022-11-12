@@ -1,10 +1,11 @@
 
 public class Circle {
-	private double radius = 5.0;
-	private String color = "Green";
+	private double radius;
+	private String color;
 	
 	public Circle() {
-		
+		radius = 5.0;
+		color = "Green";
 	}
 	
 	public Circle(double radius) {

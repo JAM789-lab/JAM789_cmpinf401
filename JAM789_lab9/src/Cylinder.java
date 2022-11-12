@@ -1,20 +1,20 @@
 
 public class Cylinder extends Circle{
-	private double height = 1.0;
+	private double height;
 	
 	public Cylinder() {
-		
+		super();
+		height = 5.0;
 	}
 	
 	public Cylinder(double radius, double height) {
-		super.setRadius(radius);
+		super(radius);
 		this.height = height;
 	}
 	
 	public Cylinder(double radius, double height, String color) {
-		super.setRadius(radius);
+		super(radius, color);
 		this.height = height;
-		super.setColor(color);
 	}
 
 	public double getHeight() {
