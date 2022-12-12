@@ -45,6 +45,11 @@ public class MenuManager {
 	}
 
 	public MenuManager(String dishesFile) {
+		/**
+		* Method MenuManager
+		* @param dishesFile a String for accessing dishes.txt
+		*/
+		
 		ArrayList<MenuItem> menu;
 		menu = FileManager.readItems(dishesFile);
 		//System.out.println(menu.get(0));
@@ -73,6 +78,12 @@ public class MenuManager {
 	}
 
 	public Menu randomMenu(String name) {
+		/**
+		* Method randomMenu
+		* @param name a String for naming the random menu
+		* @return Menu item using random Entree, Side, Salad, and Dessert items
+		*/
+
 		Entree ent = entrees.get((int)(Math.random() * entrees.size()));
 		Side sid = sides.get((int)(Math.random() * sides.size()));
 		Salad sal = salads.get((int)(Math.random() * salads.size()));
@@ -84,6 +95,12 @@ public class MenuManager {
 
 
 	public Menu minCaloriesMenu(String name) {
+		/**
+		* Method minCaloriesMenu
+		* @param name a String for naming the minCalories menu
+		* @return Menu item using lowest calorie Entree, Side, Salad, and Dessert items
+		*/
+
 		Entree ent = entrees.get(0);
 		Side sid = sides.get(0);
 		Salad sal = salads.get(0);
@@ -117,6 +134,12 @@ public class MenuManager {
 	}
 
 	public Menu maxCaloriesMenu(String name) {
+		/**
+		* Method maxCaloriesMenu
+		* @param name a String for naming the maxCalories menu
+		* @return Menu item using highest calorie Entree, Side, Salad, and Dessert items
+		*/
+
 		Entree ent = entrees.get(0);
 		Side sid = sides.get(0);
 		Salad sal = salads.get(0);

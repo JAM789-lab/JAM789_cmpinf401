@@ -29,6 +29,11 @@ import javax.swing.JDesktopPane;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextArea;
 
+/**
+ * Class FileManager
+ * @author : Jason Mertz
+ * @created: 11/27/2022
+ */
 public class MenuManagerGUI {
 
 	private JFrame frmMenuManager;
@@ -368,7 +373,7 @@ public class MenuManagerGUI {
 				for(int i = 0; i < model.size(); i++) {
 					menus.add((Menu)model.elementAt(i));
 				}
-				FileManager.writeMenu("data/menus.txt", menus);
+				FileManager.writeMenus("data/menus.txt", menus);
 			}
 		});
 		btnSaveToFile.setBounds(447, 282, 98, 21);

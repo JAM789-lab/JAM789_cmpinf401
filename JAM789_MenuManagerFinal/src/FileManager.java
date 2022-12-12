@@ -15,6 +15,12 @@ import java.util.ArrayList;
 public class FileManager {
 
 	public static ArrayList<MenuItem> readItems(String fileName){
+		/**
+		* Method readItems
+		* @param fileName a String for accessing dishes.txt
+		* @return ArrayList<MenuItem> containing all Entree, Side, Salad, and Dessert MenuItems
+		*/
+		
 		ArrayList<MenuItem> menu = new ArrayList<MenuItem>();
 
 		try {
@@ -49,7 +55,13 @@ public class FileManager {
 		return menu;
 	}
 
-	public static void writeMenu(String fileName, ArrayList<Menu> menus ) {
+	public static void writeMenus(String fileName, ArrayList<Menu> menus ) {
+		/**
+		* Method writeMenus
+		* @param fileName a String containing the location of the file that the menus are being written to
+		* @param menus an ArrayList<Menu> containing the menu that is to be written to a file
+		*/
+		
 		try {
 			FileWriter fw = new FileWriter(fileName);
 			BufferedWriter bw = new BufferedWriter(fw);
